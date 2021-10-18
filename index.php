@@ -19,15 +19,22 @@ $userInput=$_GET['input'];
     <title>PHP Badwords</title>
 </head>
 <body>
-    <h2>Paragrafo</h2>
-    <p><?php echo $paragraph;?> </p>
-    <p>Lunguezza paragrafo: <?php echo strlen($paragraph);?></p>
-    <hr>
-    <h2>Paragrafo</h2>
-    <p>
+    <form>
+        <h2>Paragrafo</h2>
+        <p><?php echo $paragraph;?> </p>
+        <p>Lunguezza paragrafo: <?php echo strlen($paragraph);?></p>
+        <hr>
+        <div id="user-input">
+            <input type="text" name="input" id="input">
+            <button type="submit">Inserire Parola da nascondere</button>
+        </div>
+        <h2>Paragrafo</h2>
+        <p>
+    
+            <?php echo str_replace($userInput,'(***)',$paragraph);?>
+        </p>
+        <p>Lunguezza paragrafo: <?php echo strlen(str_replace($userInput,'(***)',$paragraph));?></p>
 
-        <?php echo str_replace($userInput,'(***)',$paragraph);?>
-    </p>
-    <p>Lunguezza paragrafo: <?php echo strlen(str_replace($userInput,'(***)',$paragraph));?></p>
+    </form>
 </body>
 </html>
