@@ -28,6 +28,6 @@ $userInput=$_GET['input'];
 
         <?php echo str_replace($userInput,'(***)',$paragraph);?>
     </p>
-    <p>Lunguezza paragrafo: <?php echo strlen($paragraph);?></p>
+    <p>Lunguezza paragrafo: <?php echo strlen(str_replace($userInput,'(***)',$paragraph));?></p>
 </body>
 </html>
