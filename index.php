@@ -20,10 +20,6 @@ $userInput=$_GET['input'];
 </head>
 <body>
     <form>
-        <h2>Paragrafo</h2>
-        <p><?php echo $paragraph;?> </p>
-        <p>Lunguezza paragrafo: <?php echo strlen($paragraph);?></p>
-        <hr>
         <div id="user-input">
             <input type="text" name="input" id="input">
             <button type="submit">Inserire Parola da nascondere</button>
