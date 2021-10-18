@@ -17,7 +17,8 @@ $paragraph= "Il nostro compito è di fare il possibile per la salvezza degli ann
     <title>PHP Badwords</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Paragrafo</h1>
     <p><?php echo $paragraph;?> </p>
+    <p>Lunguezza paragrafo: <?php echo strlen($paragraph);?></p>
 </body>
 </html>
